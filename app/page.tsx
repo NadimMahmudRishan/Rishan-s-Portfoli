@@ -1,4 +1,5 @@
 import Hero from "@/components/main/Hero";
+import Skills from "@/components/main/Skills";
 
 export default function Home() {
   return (
@@ -6,6 +7,7 @@ export default function Home() {
       <main className="h-full w-full">
       <div className="flex flex-col gap-20 h-[850px]">
           <Hero></Hero>
+          <Skills></Skills>
       </div>
       </main>
       

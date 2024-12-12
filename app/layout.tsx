@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import StarCanvas from "@/components/main/StarBackground";
+// import StarCanvas from "@/components/main/StarBackground";
 
 
 const geistSans = localFont({
