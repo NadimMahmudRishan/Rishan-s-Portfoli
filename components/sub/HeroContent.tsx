@@ -17,7 +17,6 @@ const HeroContent = () => {
       animate="visible"
       className="flex lg:flex-row items-center justify-center px-5 lg:px-20 mt-20 lg:mt-40 w-full z-[20]"
     >
-
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
@@ -43,6 +42,19 @@ const HeroContent = () => {
           </span>
         </motion.div>
 
+        {/* For Mobile */}
+        <motion.div
+          variants={slideInFromRight(0.8)}
+          className="w-full h-full flex lg:hidden justify-center items-center"
+        >
+          <Image
+            src="/myProfile.png"
+            alt="work icons"
+            height={950}
+            width={950}
+          />
+        </motion.div>
+
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[300px] lg:max-w-[600px]"
@@ -60,7 +72,7 @@ const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex lg:flex justify-center items-center"
+        className="w-full h-full hidden lg:flex justify-center items-center"
       >
         <Image src="/myProfile.png" alt="work icons" height={950} width={950} />
       </motion.div>
