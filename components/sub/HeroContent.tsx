@@ -45,7 +45,7 @@ const HeroContent = () => {
         {/* For Mobile */}
         <motion.div
           variants={slideInFromRight(0.8)}
-          className="w-full h-full flex lg:hidden justify-center items-center"
+          className="w-full h-full flex lg:hidden justify-center items-center mainImg"
         >
           <Image
             src="/myProfile.png"
@@ -72,7 +72,7 @@ const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full hidden lg:flex justify-center items-center"
+        className="w-full h-full hidden lg:flex justify-center items-center mainImg"
       >
         <Image src="/myProfile.png" alt="work icons" height={950} width={950} />
       </motion.div>
